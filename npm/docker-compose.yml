@@ -10,9 +10,9 @@ services:
     network_mode: bridge
 
     ports:
+      - "80:80"
       - "81:81"
       - "443:443"
-      - "4443:4443"
 
     volumes:
       - /home/portainer/docker/npm/data:/data
