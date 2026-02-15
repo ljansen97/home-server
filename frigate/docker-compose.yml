@@ -20,6 +20,6 @@ services:
           size: 1000000000
     ports:
       - 5000:5000
-    network_mode: host
+    network_mode: bridge
     environment:
       FRIGATE_RTSP_PASSWORD: "qwerty"
