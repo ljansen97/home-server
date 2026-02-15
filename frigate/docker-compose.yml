@@ -20,5 +20,10 @@ services:
           size: 1000000000
     ports:
       - 5000:5000
+    networks:
+      - frigate_net
     environment:
       FRIGATE_RTSP_PASSWORD: "qwerty"
+networks:
+  frigate_net:
+    driver: bridge
