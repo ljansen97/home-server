@@ -49,7 +49,7 @@ DHCP is done through Pi-Hole with the following configuration:
 2. Run `cat C:/Users/LJ/.ssh/server_name.pub`
 3. Copy the key (with pre and postfix)
 
-## On the server
+### On the server
 1. Run `echo "<public key>" >> ~/.ssh/authorized_keys`
 2. Run `chmod 600 ~/.ssh/authorized_keys`
 2. Run `sudo nano /etc/ssh/sshd_config`
