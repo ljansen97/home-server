@@ -22,3 +22,13 @@ address=/server.local/192.168.1.251
 ```
 
 This will make sure that `*.server.local` always gets resolved to `192.168.1.251`.
+
+## DHCP Configuration
+DHCP is done through Pi-Hole with the following configuration:
+
+| Item | Configuration |
+| --- | --- |
+| Start | `192.168.1.50` |
+| End | `192.168.1.200` |
+| Gateway |  `192.168.1.254` |
+| Netmask | `255.255.255.0` |
