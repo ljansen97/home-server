@@ -14,6 +14,14 @@
 | ProxMox | [http://192.168.1.253:8006](http://192.168.1.253:8006) | root | qwerty1234 |
 | Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
 
+## Server logins
+First run `cd C:/Users/LJ/.ssh/`.
+
+| Server | IP | Command |
+| --- | --- | --- |
+| PiHole | 192.168.1.252 | `ssh -i ./pihole lanfrey@192.168.1.252` |
+| Portainer | 192.168.1.251 | `ssh -i ./portainer portainer@192.168.1.252` |
+
 ## DNS wildcard configuration
 To configure the DNS wildcard configuration, you have to do the following steps.
 
@@ -34,3 +42,18 @@ DHCP is done through Pi-Hole with the following configuration:
 | End | `192.168.1.200` |
 | Gateway |  `192.168.1.254` |
 | Netmask | `255.255.255.0` |
+
+## Generating keys for a new server
+### On Windows
+1. Run `ssh-keygen -t rsa -b 4096 -C "server_name"`
+2. Run `cat C:/Users/LJ/.ssh/server_name.pub`
+3. Copy the key (with pre and postfix)
+
+## On the server
+1. Run `echo "<public key>" >> ~/.ssh/authorized_keys`
+2. Run `chmod 600 ~/.ssh/authorized_keys`
+2. Run `sudo nano /etc/ssh/sshd_config`
+3. Uncomment the following lines:
+- `PubkeyAuthentication yes`
+- `AuthorizedKeyFile .ssh/authorized_keys`
+3. Run `sudo systemctl restart ssh`
