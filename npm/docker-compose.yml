@@ -14,3 +14,4 @@ services:
 
     volumes:
       - /home/portainer/docker/npm/data:/data
+      - /home/portainer/docker/npm/letsencrypt:/etc/letsencrypt
