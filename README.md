@@ -8,9 +8,11 @@
 | 192.168.1.252 | PiHole | DNS, DHCP |
 | 192.168.1.251 | Portainer | |
 
-## Default username and passwords
-Username: `lanfrey`
-Password: `qwerty`
+## Web UI's
+| Service | Link | Username | Password |
+| --- | --- | --- | ---- |
+| ProxMox | [http://192.168.1.253:8006](http://192.168.1.253:8006) | root | qwerty1234 |
+| Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
 
 ## DNS wildcard configuration
 To configure the DNS wildcard configuration, you have to do the following steps.
