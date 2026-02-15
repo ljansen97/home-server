@@ -18,8 +18,6 @@ services:
         target: /tmp/cache
         tmpfs:
           size: 1000000000
-    networks:
-      - main
     ports:
       - 1935:1935
     environment:
@@ -32,8 +30,4 @@ services:
       - /home/portainer/docker/frigate/mosquitto/config/mosquitto/data:/mosquitto/data
       - /home/portainer/docker/frigate/mosquitto/config/mosquitto/log:/mosquitto/log
     user: "1000:1000"
-    networks:
-      - main
     restart: unless-stopped
-networks:
-  main:
