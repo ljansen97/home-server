@@ -6,7 +6,7 @@
 | 192.168.1.254 | ASUS Router | Gateway to the internet |
 | 192.168.1.253 | ProxMox | ProxMox |
 | 192.168.1.252 | PiHole | DNS, DHCP |
-| 192.168.1.251 | Portainer | |
+| 192.168.1.251 | Portainer | Frigate, nginx-proxy-manager |
 
 ## Web UI's
 | Service | Link | Username | Password |
@@ -14,6 +14,7 @@
 | ProxMox | [http://192.168.1.253:8006](http://192.168.1.253:8006) | root | qwerty1234 |
 | Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
 | Portainer | [https://192.168.1.251:9443](https://192.168.1.251:9443) | admin | qwerty12345678 |
+| nginx-proxy-manager | [http://192.168.1.251:81](http://192.168.1.251:81) | lanfrey.jansen@pm.me | qwerty1234 |
 
 ## Server logins
 First run `cd C:/Users/LJ/.ssh/`.
