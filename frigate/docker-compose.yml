@@ -37,6 +37,4 @@ services:
       - main
     restart: unless-stopped
 networks:
-  nginx-proxy-manager_main:
-    external: true
   main:
