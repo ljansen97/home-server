@@ -3,8 +3,8 @@
 ## IP Configuration
 | IP Address | Description | Services running |
 | --- | --- | --- |
-| 192.168.1.254 | ASUS Router | |
-| 192.168.1.253 | ProxMox | |
+| 192.168.1.254 | ASUS Router | Gateway to the internet |
+| 192.168.1.253 | ProxMox | ProxMox |
 | 192.168.1.252 | PiHole | DNS, DHCP |
 | 192.168.1.251 | Portainer | |
 
