@@ -12,8 +12,8 @@ services:
       - /dev/dri/renderD128 # for intel hwaccel, needs to be updated for your hardware
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./config/frigate:/config:ro
-      - ./data/media/frigate:/media/frigate
+      - /home/portainer/docker/frigate/frigate/config/frigate:/config:ro
+      - /home/portainer/docker/frigate/frigate/data/media/frigate:/media/frigate
       - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
         target: /tmp/cache
         tmpfs:
@@ -28,9 +28,9 @@ services:
     image: eclipse-mosquitto
     container_name: mqtt
     volumes:
-      - ./config/mosquitto/conf:/mosquitto/config
-      - ./config/mosquitto/data:/mosquitto/data
-      - ./config/mosquitto/log:/mosquitto/log
+      - /home/portainer/docker/frigate/mosquitto/config/mosquitto/conf:/mosquitto/config
+      - /home/portainer/docker/frigate/mosquitto/config/mosquitto/data:/mosquitto/data
+      - /home/portainer/docker/frigate/mosquitto/config/mosquitto/log:/mosquitto/log
     user: "1000:1000"
     networks:
       - main
