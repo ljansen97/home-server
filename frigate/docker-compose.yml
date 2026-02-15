@@ -22,6 +22,8 @@ services:
       - 1935:1935
     environment:
       FRIGATE_RTSP_PASSWORD: "qwerty"
+    depends_on:
+      - mosquitto
   mosquitto:
     image: eclipse-mosquitto
     container_name: mqtt
