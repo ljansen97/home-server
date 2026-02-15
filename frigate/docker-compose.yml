@@ -19,6 +19,6 @@ services:
         tmpfs:
           size: 1000000000
     ports:
-      - 1935:1935
+      - 5000:5000
     environment:
       FRIGATE_RTSP_PASSWORD: "qwerty"
