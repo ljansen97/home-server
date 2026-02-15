@@ -19,7 +19,6 @@ services:
         tmpfs:
           size: 1000000000
     networks:
-      - nginx-proxy-manager_main
       - main
     ports:
       - 1935:1935
