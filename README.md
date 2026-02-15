@@ -13,6 +13,7 @@
 | --- | --- | --- | ---- |
 | ProxMox | [http://192.168.1.253:8006](http://192.168.1.253:8006) | root | qwerty1234 |
 | Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
+| Portainer | [https://192.168.1.251:9443](https://192.168.1.251:9443) | admin | qwerty12345678 |
 
 ## Server logins
 First run `cd C:/Users/LJ/.ssh/`.
