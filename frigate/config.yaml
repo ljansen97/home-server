@@ -1,0 +1,17 @@
+mqtt:
+  enabled: false
+cameras:
+  living-room:
+    ffmpeg:
+      inputs:
+        - path: rtsp://lanfrey:qwerty@192.168.1.220:554/stream1
+          roles:
+            - rtmp
+          input_args: -rtsp_transport tcp
+    record:
+      enabled: true
+      retain:
+        days: 7
+detect:
+  enabled: false
+version: 0.16-0
