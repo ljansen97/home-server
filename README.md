@@ -12,8 +12,8 @@
 | Service | Link | Username | Password |
 | --- | --- | --- | ---- |
 | ProxMox | [https://proxmox.server.local](https://proxmox.server.local) | root | qwerty1234 |
-| Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
-| nginx-proxy-manager | [http://192.168.1.251:81](http://192.168.1.251:81) | lanfrey.jansen@pm.me | qwerty1234 |
+| Pi-Hole | [https://pihole.server.local/admin](http://pihole.server.local/admin) | N/A | qwerty |
+| nginx-proxy-manager | [https://npm.server.local](http://npm.server.local:81) | lanfrey.jansen@pm.me | qwerty1234 |
 
 ## Server logins
 First run `cd C:/Users/LJ/.ssh/`.
