@@ -12,8 +12,8 @@ services:
       - /dev/dri/renderD128 # for intel hwaccel, needs to be updated for your hardware
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /home/portainer/docker/frigate/frigate/config/frigate:/config
-      - /home/portainer/docker/frigate/frigate/data/media/frigate:/media/frigate
+      - /opt/appdata/frigate/config:/config
+      - /mnt/data/frigate-media:/media/frigate
       - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
         target: /tmp/cache
         tmpfs:
