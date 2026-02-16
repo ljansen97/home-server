@@ -21,7 +21,7 @@ First run `cd C:/Users/LJ/.ssh/`.
 | Server | IP | Command |
 | --- | --- | --- |
 | PiHole | 192.168.1.252 | `ssh -i ./pihole lanfrey@192.168.1.252` |
-| Portainer | 192.168.1.251 | `ssh -i ./portainer portainer@192.168.1.251` |
+| Docker | 192.168.1.251 | `ssh -i ./docker docker@192.168.1.251` |
 
 ## DNS wildcard configuration
 To configure the DNS wildcard configuration, you have to do the following steps.
