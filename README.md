@@ -11,7 +11,7 @@
 ## Web UI's
 | Service | Link | Username | Password |
 | --- | --- | --- | ---- |
-| ProxMox | [http://192.168.1.253:8006](http://192.168.1.253:8006) | root | qwerty1234 |
+| ProxMox | [https://proxmox.server.local](https://proxmox.server.local) | root | qwerty1234 |
 | Pi-Hole | [http://192.168.1.252/admin](http://192.168.1.252/admin) | N/A | qwerty |
 | nginx-proxy-manager | [http://192.168.1.251:81](http://192.168.1.251:81) | lanfrey.jansen@pm.me | qwerty1234 |
 
