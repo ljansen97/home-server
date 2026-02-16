@@ -58,3 +58,13 @@ DHCP is done through Pi-Hole with the following configuration:
 - `PubkeyAuthentication yes`
 - `AuthorizedKeyFile .ssh/authorized_keys`
 3. Run `sudo systemctl restart ssh`
+
+## Generating a self-signed certificate for nginx-proxy-manager
+```mkdir -p /etc/ssl/selfsigned
+cd /etc/ssl/selfsigned
+
+# Generate private key
+openssl genrsa -out npm-selfsigned.key 2048
+
+# Generate self-signed certificate (valid for 365 days)
+openssl req -x509 -nodes -days 365 -key npm-selfsigned.key -out npm-selfsigned.crt```
