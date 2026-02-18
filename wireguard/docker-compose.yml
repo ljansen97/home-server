@@ -2,16 +2,10 @@ services:
   wg-easy:
     image: ghcr.io/wg-easy/wg-easy:15
     container_name: wg-easy
-    networks:
-      wg:
-        ipv4_address: 10.42.42.42
-        ipv6_address: fdcc:ad94:bacf:61a3::2a
+    network_mode: "host"
     volumes:
       - /opt/appdata/wireguard:/etc/wireguard
       - /lib/modules:/lib/modules:ro
-    ports:
-      - "51820:51820/udp"
-      - "51821:51821/tcp"
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
@@ -24,13 +18,3 @@ services:
       - net.ipv6.conf.default.forwarding=1
     environment:
       WG_LAN: 192.168.1.0/24
-
-networks:
-  wg:
-    driver: bridge
-    enable_ipv6: true
-    ipam:
-      driver: default
-      config:
-        - subnet: 10.42.42.0/24
-        - subnet: fdcc:ad94:bacf:61a3::/64
