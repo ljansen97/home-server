@@ -13,7 +13,8 @@
 | --- | --- | --- | ---- |
 | ProxMox | [https://proxmox.server.local](https://proxmox.server.local) | root | qwerty1234 |
 | Pi-Hole | [https://pihole.server.local/admin](http://pihole.server.local/admin) | N/A | qwerty |
-| nginx-proxy-manager | [https://npm.server.local](http://npm.server.local:81) | lanfrey.jansen@pm.me | qwerty1234 |
+| nginx-proxy-manager | [https://npm.server.local](http://npm.server.local) | lanfrey.jansen@pm.me | qwerty1234 |
+| Wireguard | [https://wireguard.server.local](http://wireguard.server.local) | lanfrey | qwerty12345678 |
 
 ## Server logins
 First run `cd C:/Users/LJ/.ssh/`.
