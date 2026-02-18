@@ -12,7 +12,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /opt/appdata/frigate/config:/config
-      - /mnt/data/frigate-media:/media/frigate
+      - /mnt/hetzner-frigate-media:/media/frigate
       - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
         target: /tmp/cache
         tmpfs:
