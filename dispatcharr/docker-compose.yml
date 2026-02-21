@@ -1,0 +1,17 @@
+services:
+  dispatcharr:
+    image: ghcr.io/dispatcharr/dispatcharr:latest
+    restart: unless-stopped
+    container_name: dispatcharr
+    networks:
+      - npm-proxy
+    volumes:
+      - /opt/appdata/dispatcharr/data:/data
+    environment:
+      - DISPATCHARR_ENV=aio
+      - REDIS_HOST=localhost
+      - CELERY_BROKER_URL=redis://localhost:6379/0
+      - DISPATCHARR_LOG_LEVEL=info
+networks:
+  npm-proxy:
+    external: true
