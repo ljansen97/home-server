@@ -7,9 +7,8 @@ services:
       TZ: "Europe/Amsterdam"
       DISABLE_IPV6: 'true'
 
-    network_mode: bridge
-
     networks:
+      - npm-bridge
       - npm-proxy
 
     ports:
@@ -21,4 +20,6 @@ services:
       - /opt/appdata/npm/data:/data
       - /opt/appdata/npm/letsencrypt:/etc/letsencrypt
 networks:
+  npm-bridge:
+    driver: bridge
   npm-proxy:
