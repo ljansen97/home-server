@@ -9,6 +9,9 @@ services:
 
     network_mode: bridge
 
+    networks:
+      - npm-proxy
+
     ports:
       - "80:80"
       - "81:81"
