@@ -17,3 +17,5 @@ services:
     volumes:
       - /opt/appdata/npm/data:/data
       - /opt/appdata/npm/letsencrypt:/etc/letsencrypt
+networks:
+  npm-proxy:
